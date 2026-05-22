@@ -1,12 +1,14 @@
-# lefthook.yml
-
 pre-commit:
   parallel: true
   commands:
     fix: 
       run: npm run biome:fix
-      exclude:"node_modules"
+      exclude: "node_modules"
+
 
 commit-msg:
-parallel:true
+  parallel: true
+  commands:
+    commitlint:
+    run: npx commitlint --edit {1}
 
