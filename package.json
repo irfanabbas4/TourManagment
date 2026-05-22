@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "biome:check": "biome check ./src",
-    "biome:fix": "biome check ./src --write",
-    "preview": "vite preview"
+    "biome:fix": "biome check ./src --write"
   },
   "dependencies": {
     "react": "^19.2.6",
